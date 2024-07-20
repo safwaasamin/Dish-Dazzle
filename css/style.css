@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Header */
+#header {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 80vh;
+  color: white;
+}
+
+#header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  padding: 30px 100px;
+}
+
+.top-header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.top-header ul li {
+  margin-right: 20px;
+}
+
+.top-header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.branding {
+  color: white;
+  text-align: center;
+  margin-top: -100px;
+}
+
+.branding h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.branding h1 span {
+  display: block;
+  font-size: 3.5rem;
+}
+
+.branding .btn-cta {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.branding .btn-cta:hover {
+  background-color: rgb(130, 125, 134);
+  color: white;
+}
+
+.branding .btn-cta a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Features Section */
+#features .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+#features .feature {
+  text-align: center;
+}
+
+#features img {
+  max-width: 100px;
+}
+
+#features h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  #features .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cuisines Section */
+#cuisines {
+  padding: 60px;
+  text-align: center;
+}
+
+#cuisines h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#cuisines .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#cuisines .cuisine {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#cuisines h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #cuisines .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Dessarts Section */
+#desserts {
+  padding: 60px;
+  text-align: center;
+}
+
+#desserts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#desserts .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#desserts .dessert {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#desserts h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #desserts .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Statistics Section */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.stat-data {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.stat-data h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stat-data span {
+  display: block;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .stat-data {
+    flex-basis: 45%;
+  }
+}
+
+/* Reviews Section */
+#reviews h2 {
+  font-size: 2.5rem;
+  margin: 50px;
+  text-align: center;
+}
+
+#slider,
+ul {
+  height: 200px;
+}
+
+#slider {
+  background-image: url("../images/reviews-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+#slider li {
+  /* float: left; */
+  position: relative;
+  width: 600px;
+  display: inline-block;
+  height: 200px;
+}
+
+#slider ul {
+  list-style: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 9000px;
+  transition: left .2s linear;
+  -moz-transition: left .2s linear;
+  -o-transition: left .2s linear;
+  -webkit-transition: left .2s linear;
+  margin-left: -25px;
+  font-family: open sans;
+  color: #d61717;
+}
+
+.slider-container p {
+  color: #ffffff;
+  margin: 50px 55px;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 160%;
+}
+
+@keyframes slide-animation {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    left: 0px;
+    opacity: 1;
+  }
+
+  22.5% {
+    opacity: 0.6;
+  }
+
+  25% {
+    left: -600px;
+    opacity: 1;
+  }
+
+  45% {
+    left: -600px;
+    opacity: 1;
+  }
+
+  47.5% {
+    opacity: 0.6;
+  }
+
+  50% {
+    left: -1200px;
+    opacity: 1;
+  }
+
+  70% {
+    left: -1200px;
+    opacity: 1;
+  }
+
+  72.5% {
+    opacity: 0.6;
+  }
+
+  75% {
+    left: -1800px;
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  98% {
+    left: -1800px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 0;
+  }
+}
+
+#slider ul {
+  animation: slide-animation 20s infinite;
+}
+
+#slider li {
+  animation: slide-animation 30s infinite;
+}
+
+/* Footer */
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+
+#footer span {
+  font-weight: bold;
+}

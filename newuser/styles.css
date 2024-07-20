@@ -1,0 +1,153 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bg-img {
+  background: url('../images/bg8.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(103, 85, 85, 0.5); 
+}
+
+/* .top-header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.top-header ul a {
+  margin: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+} */
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content header {
+  color: rgb(255, 166, 0);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 35px 0;
+}
+
+.field {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  background: rgba(203, 203, 203, 0.94);
+}
+
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.space {
+  margin-top: 16px;
+}
+
+.show {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+}
+
+.pass-key:valid~.show {
+  display: block;
+}
+
+.pass {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.pass a {
+  color: white;
+  text-decoration: none;
+}
+
+.pass:hover a {
+  text-decoration: underline;
+}
+
+.field input[type="submit"] {
+  background: #166396;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.field input[type="submit"]:hover {
+  background: #2691d9;
+}
+
+.signup {
+  padding-top: 30px;
+  font-size: 15px;
+  color: white;
+}
+
+.signup a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
